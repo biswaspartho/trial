@@ -112,7 +112,9 @@
                     </div>
                 </div>
                 <div class="center">
-                    <button class="btn" value ="450" onclick="addTotal()">Add</button>
+                    <button class="btn" onclick="addTotal(450)">Add</button>
+                    }
+                
                 </div>
             </div>
         </div>
@@ -123,5 +125,26 @@
         Total: <span id="total">0</span>
     </h1>
 </div>
+<script>
+    var total=0;
+    function addToTotal1(price){
+        let qty = document.getElementById('qty1').value;
+        total=total+(qty*price);
+        let output=document.getElementById('total');
+        output.innerText=total;
+    }
+    function addToTotal2(price){
+        let qty = document.getElementById('qty2').value;
+        total=total+(qty*price);
+        let output=document.getElementById('total');
+        output.innerText=total;
+    }
+    function addToTotal3(price){
+        let qty = document.getElementById('qty3').value;
+        total=total+(qty*price);
+        let output=document.getElementById('total');
+        output.innerText=total;
+    }
+</script>
 </body>
 </html>
