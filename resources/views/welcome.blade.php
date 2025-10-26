@@ -5,34 +5,123 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+        .container{
+            display:flex;
+            justify-content: space-evenly;
+        }
+        .card{
+            background-color: white;
+            border-radius: 10px;
+            padding: 10px;
+            margin:5px;
+            border: 1px solid grey;
+            box-shadow: 1px 1px 11px 0px;
+        }
+        .flex{
+            display: flex;
+            padding: 10px;
+        }
+        .btn{
+            padding: 10px;
+            background-color: rgb(0,140,255);
+            color: white;
+            font-weight:600;
+        }
+        .center{
+            display:flex;
+            justify-content:center;
+        }
+    </style>
 </head>
 <body>
-    <h1>
-        Lab05
-    </h1>
-    <form action="#" method="">
-        <input type="number" class="Input-field" id="num1" placeholder="Enter Number">
-        <input type="number" class="Input-field" id="num2" placeholder="Enter Anther Number">
-        <input type="button" class="btn" id="add-button" value="Click To Add Number" onclick="addTwonumbers()">
-    </form>
-    <div>
-        <h1>
-            Output Is : <span id="result">0</span>
-        </h1>
+<div style="display:flex">
+<div class="container">
+        <div class="card">
+            <div>
+                <img src="https://thumbs.dreamstime.com/b/environment-earth-day-hands-trees-growing-seedlings-bokeh-green-background-female-hand-holding-tree-nature-field-118143566.jpg" alt="Nature">
+            </div>
+            <div>
+                <div class="flex">
+                    <div>
+                        NATURE
+                    </div>
+                    <div>
+                        <del>500</del>
+                        <div>450</div>
+                    </div>
+                </div>
+                <div class ="flex">
+                    <input type="number" style="width:30px">
+                    <div>
+                        Qty
+                    </div>
+                </div>
+                <div class="center">
+                    <button class="btn">Add</button>
+                </div>
+            </div>
+        </div>
     </div>
-    <script>
-        function addTwonumbers(){
-            let num1 = Number(document.getElementById('num1').value);
-            let num2 = Number (document.getElementById('num2').value);
-            let sum=num1+num2;
-            let output = document.getElementById('result');
-            if (sum>100){
-                output.innerText="NUMBER IS GREATTER THAN 100";
-            }
-            else{
-                output.innerText=sum;
-            }
-        }
-    </script>
+    <div class="container">
+        <div class="card">
+            <div>
+                <img src="https://thumbs.dreamstime.com/b/environment-earth-day-hands-trees-growing-seedlings-bokeh-green-background-female-hand-holding-tree-nature-field-118143566.jpg" alt="Nature">
+            </div>
+            <div>
+                <div class="flex">
+                    <div>
+                        NATURE
+                    </div>
+                    <div>
+                        <del>500</del>
+                        <div>450</div>
+                    </div>
+                </div>
+                <div class ="flex">
+                    <input type="number" style="width:30px">
+                    <div>
+                        Qty
+                    </div>
+                </div>
+                <div class="center">
+                    <button class="btn">Add</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="card">
+            <div>
+                <img src="https://thumbs.dreamstime.com/b/environment-earth-day-hands-trees-growing-seedlings-bokeh-green-background-female-hand-holding-tree-nature-field-118143566.jpg" alt="Nature">
+            </div>
+            <div>
+                <div class="flex">
+                    <div>
+                        NATURE
+                    </div>
+                    <div>
+                        <del>500</del>
+                        <div>450</div>
+                    </div>
+                </div>
+                <div class ="flex">
+                    <input type="number" style="width:30px">
+                    <div>
+                        Qty
+                    </div>
+                </div>
+                <div class="center">
+                    <button class="btn" value ="450" onclick="addTotal()">Add</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="container card">
+    <h1>
+        Total: <span id="total">0</span>
+    </h1>
+</div>
 </body>
 </html>
